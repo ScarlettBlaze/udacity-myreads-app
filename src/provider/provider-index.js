@@ -9,7 +9,11 @@ export default class providerIndex extends Component {
             books: [],
             currentlyReading: [],
             wantToRead: [],
-            alreadyRead: []
+            alreadyRead: [],
+
+            addBooks: books => {
+                
+            }
         }
     }
     render() {

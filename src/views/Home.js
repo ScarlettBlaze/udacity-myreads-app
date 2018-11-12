@@ -7,7 +7,10 @@ export default class Home extends Component {
     async componentDidMount() {
         try {
             const books = await getAll();
-            console.log(books)
+            const currentlyReading = books.filter(book => book.shelf === "currentlyReading");
+            const alreadyRead = books.filter(book => book.shelf === "alreadyRead");
+            const wantToRead = books.filter(book => book.shelf === "wantToRead");
+            console.log(currentlyReading, wantToRead, alreadyRead);
         }
         catch(error) {
             console.log(error);

@@ -11,12 +11,22 @@ class BooksApp extends React.Component {
       <div className="app">
         <Provider>
             <Switch>
-              <Route exact path={'/'} render={() => (
-              <InContext.Consumer>
-                {context => <Home {...context} />}
-              </InContext.Consumer>
-              )}/>
-               <Route exact path={'/search'} component={Search}/>
+                <Route 
+                  exact path={'/'} 
+                  render={() => (
+                    <InContext.Consumer>
+                      {context => <Home {...context} />}
+                    </InContext.Consumer>
+                  )}
+                />
+               <Route 
+                  exact path={'/search'} 
+                  render={() => (
+                    <InContext.Consumer>
+                      {context => <Search {...context} />}
+                    </InContext.Consumer>
+                  )}
+               />
             </Switch>
        </Provider>
       </div>
