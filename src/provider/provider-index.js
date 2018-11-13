@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 export const InContext = React.createContext();
 
-
 export default class providerIndex extends Component {
     constructor() {
         super();
