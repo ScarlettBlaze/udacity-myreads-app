@@ -3,10 +3,13 @@ import {update} from '../BooksAPI'
 
 export default class Book extends Component {
   handlechange = async e => {
+
+    e.persist();
+
     try {
       const shelf = e.target.value;
       const book = this.props;
-      const result = await update(book, shelf)
+      const result = await update(book, shelf);
       this.props.moveBook(book,shelf, result);    
     }
     catch(error) {

@@ -78,6 +78,7 @@ export default class Search extends Component {
                             />
                         );
                     })}
+                    {this.state.books.length === 0 && (<h1 style={{textAlign:"center"}}>No Results Found</h1>)}
                 </ol>
             </div>
       </div>)
