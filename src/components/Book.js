@@ -3,9 +3,7 @@ import {update} from '../BooksAPI'
 
 export default class Book extends Component {
   handlechange = async e => {
-
-    e.persist();
-
+    
     try {
       const shelf = e.target.value;
       const book = this.props;
