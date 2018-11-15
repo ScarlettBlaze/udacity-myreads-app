@@ -1,6 +1,6 @@
 # MyReads Project
 
-# Description
+## Description
 
 The goal of this project was to build a bookshelf app that allows you to select and categorize books you have already read, currently reading, or want to read. The app also lets you search for a book in a limited database.
 
